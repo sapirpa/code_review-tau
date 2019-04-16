@@ -1,5 +1,5 @@
 import pyplot as plt
-print("I need coffee!")
+print("I need help!")
 import numpy as np
 from matplotlib import pyplot
 import os
