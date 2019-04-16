@@ -17,6 +17,7 @@ col3 = data[800, :]
 plt.figure()
 plt.plot(np.arange(1024), col1)
 mean = np.mean(col1)
+
 plt.axhline(mean)
 plt.legend(['Column 20', 'Mean'])
 plt.title('Plot of Column 20 Values and Mean')
@@ -24,6 +25,7 @@ plt.xlabel('Pixels')
 plt.ylabel('Intensity')
 plt.figure()
 plt.plot(np.arange(1024), col2)
+
 mean = np.mean(col2)
 plt.axhline(mean)
 plt.legend(['Column 200', 'Mean'])
