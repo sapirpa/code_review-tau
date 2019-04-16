@@ -1,4 +1,6 @@
 import pyplot as plt
+print("I need coffee!")
+print("and chocolate")
 print("I need help!")
 import numpy as np
 import pandas as pd
