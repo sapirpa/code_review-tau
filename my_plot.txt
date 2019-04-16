@@ -15,7 +15,6 @@ pyplot.figure()
 pyplot.plot(np.arange(2048), col1)
 mean = np.mean(col1)
 
-
 pyplot.axhline(mean)
 pyplot.legend(['Column 20', 'Mean'])
 pyplot.title('Plot of Column 20 Values and Mean - It is fun to plot!')
@@ -23,7 +22,9 @@ pyplot.xlabel('Pixels')
 pyplot.ylabel('Intensity')
 pyplot.figure()
 pyplot.plot(np.arange(1024), col2)
+
 mean = np.mean(col2)
+
 pyplot.axhline(mean)
 pyplot.legend(['Column 200', 'Mean'])
 pyplot.title('Plot of Column 200 Values and Mean')
@@ -31,8 +32,8 @@ pyplot.xlabel('Pixels2')
 pyplot.ylabel('Intensity2')
 pyplot.figure()
 pyplot.plot(np.arange(1024), col3)
-mean = np.mean(col3)
 
+mean = np.mean(col3)
 
 pyplot.axhline(mean)
 pyplot.legend(['Column 800', 'Mean'])
