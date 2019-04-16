@@ -14,7 +14,7 @@ mean = np.mean(col1)
 
 pyplot.axhline(mean)
 pyplot.legend(['Column 20', 'Mean'])
-pyplot.title('Plot of Column 20 Values and Mean')
+pyplot.title('Plot of Column 20 Values and Mean - It is fun to plot!')
 pyplot.xlabel('Pixels')
 pyplot.ylabel('Intensity')
 pyplot.figure()
