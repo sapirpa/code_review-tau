@@ -4,7 +4,7 @@ import os
 from astropy.io import fits
 import glob
 data = fits.getdata('/Users/bostroem/Desktop/images/hubble_img.fits')
-col1 = data[20, :]
+col1 = data[10, :]
 col2 = data[200, :]
 col3 = data[800, :]
 pyplot.figure()
