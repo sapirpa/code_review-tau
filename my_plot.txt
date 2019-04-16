@@ -8,7 +8,7 @@ col1 = data[20, :]
 col2 = data[200, :]
 col3 = data[800, :]
 pyplot.figure()
-pyplot.plot(np.arange(1024), col1)
+pyplot.plot(np.arange(2048), col1)
 mean = np.mean(col1)
 pyplot.axhline(mean)
 pyplot.legend(['Column 20', 'Mean'])
