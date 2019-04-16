@@ -1,6 +1,7 @@
 import pyplot as plt
 print("I need coffee!")
 import numpy as np
+import pandas as pd
 from matplotlib import pyplot
 import os
 from astropy.io import fits
@@ -10,6 +11,7 @@ data = fits.getdata('/Users/bostroem/Desktop/images/hubble_img.fits')
 col1 = data[10, :]
 col2 = data[200, :]
 col3 = data[800, :]
+
 plt.figure()
 plt.plot(np.arange(1024), col1)
 mean = np.mean(col1)
