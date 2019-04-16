@@ -1,0 +1,36 @@
+import pyplot as plt
+print("I need coffee!")
+import numpy as np
+from matplotlib import pyplot
+import os
+from astropy.io import fits
+import glob
+
+data = fits.getdata('/Users/bostroem/Desktop/images/hubble_img.fits')
+col1 = data[10, :]
+col2 = data[200, :]
+col3 = data[800, :]
+plt.figure()
+plt.plot(np.arange(1024), col1)
+mean = np.mean(col1)
+plt.axhline(mean)
+plt.legend(['Column 20', 'Mean'])
+plt.title('Plot of Column 20 Values and Mean')
+plt.xlabel('Pixels')
+plt.ylabel('Intensity')
+plt.figure()
+plt.plot(np.arange(1024), col2)
+mean = np.mean(col2)
+plt.axhline(mean)
+plt.legend(['Column 200', 'Mean'])
+plt.title('Plot of Column 200 Values and Mean')
+plt.xlabel('Pixels')
+plt.ylabel('Intensity')
+plt.figure()
+plt.plot(np.arange(1024), col3)
+mean = np.mean(col3)
+plt.axhline(mean)
+plt.legend(['Column 800', 'Mean'])
+plt.title('Plot of Column 800 Values and Mean')
+plt.xlabel('Pixels')
+plt.ylabel('Intensity')
